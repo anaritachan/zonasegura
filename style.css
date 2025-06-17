@@ -1,0 +1,178 @@
+body {
+    background-color: #151515;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+header{
+    background: -webkit-linear-gradient(#b6b6b6, #070707);
+    -webkit-background-fill-color:transparent;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    margin: 0 auto; /*Centraliza a div na página*/
+    margin-top: -8px;
+    border-radius: 0 0 10px 10px;
+}
+
+.t_header {
+    color: black;
+    font-size: 40pt;
+    margin-top: 2px;
+}
+
+.st_header {
+    font-size: 20pt;
+    margin-top: 4px;
+}
+
+.t_footer {
+    color: rgb(0, 0, 0);
+    font-size: 40pt;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 170px;
+    background: -webkit-linear-gradient(#b6b6b6, #070707);
+    -webkit-background-fill-color:transparent;
+    border-radius: 10px 10px 0 0; /*Arredonda os cantos da div*/
+    font-family: Roboto;
+}
+
+.texto_p {
+    color:#ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: Roboto;
+    margin-left: -5px;
+    margin-right: 20px;
+}
+
+.titulo_barra{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+}
+
+.fading_titulo{
+    font-size: 70px;
+    text-align: center;
+    margin-left: 0;
+    background: black;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    
+}
+
+.subtit{
+    color: #ffffff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-left: 0;
+    margin-top: -22px;
+}
+
+.subtit_rodape{
+    color: #ffffff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    margin-left: 0;
+    margin-top: 73px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ /* Barra de navegação horizontal */
+.sidenav {
+    width: 100%; /* Largura total */
+    z-index: 1;
+    top: 0; /* Colada no topo */
+    left: 0;
+    background-color: #151515;
+    overflow-x: auto; /* Rolagem horizontal se necessário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: groove; /* Borda inferior */
+    display: flex; /* Layout flex para itens horizontais */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo dos links */
+.sidenav a {
+    color: #ffffff;
+    padding: 16px;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-left: 60px;
+    white-space: nowrap; /* Impede quebra de linha */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover */
+.sidenav a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Conteúdo da página (para exemplo) */
+.content {
+    margin-top: 60px; /* Espaço para a barra fixa */
+    padding: 20px;
+}
+
+.profile {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile img {
+    top: 10px;
+    margin-right: 20px;
+    margin-left: 15px;
+    right: 160px;
+    width: 300px;
+    height: auto;
+    border-radius: 35px;
+}
+
+.texto2 {
+    margin-left: 30px;
+}
+
+.fade-in-element {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1s ease-in-out;
+    transform: translateY(30px); /* Um pequeno deslocamento para efeito */
+}
+
+/* Quando o elemento estiver visível */
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img {
+    height: 200px;
+    width: 270px;
+    border-radius: 10px;
+    margin-left: 1000px;
+}
+
+.p1 {
+    margin-top: -150px;
+    margin-left: 200px;
+    font-size: 14pt;
+}
