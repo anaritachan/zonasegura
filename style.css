@@ -1,0 +1,164 @@
+/* CSS existente com melhorias para responsividade */
+        body {
+            background-color: #151515;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header{
+            background: linear-gradient(to bottom, #b6b6b6, #070707);
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 0;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .t_header {
+            color: black;
+            font-size: 2.5rem; /* Usando unidades relativas */
+            margin: 5px 0;
+        }
+
+        .st_header {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        .t_footer {
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            padding: 15px 0;
+        }
+
+        footer{
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background: linear-gradient(to top, #b6b6b6, #070707);
+            border-radius: 10px 10px 0 0;
+            font-family: Roboto;
+        }
+
+        /* Barra de navegação responsiva */
+        .sidenav {
+            width: 100%;
+            z-index: 1;
+            background-color: #151515;
+            overflow-x: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-bottom: groove;
+            display: flex;
+            flex-wrap: wrap; /* Permite quebra de linha */
+            justify-content: center; /* Centraliza os itens */
+        }
+
+        .sidenav a {
+            color: #ffffff;
+            padding: 12px 15px;
+            text-decoration: none;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            white-space: nowrap;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 5px; /* Espaçamento reduzido */
+        }
+
+        .sidenav a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Conteúdo principal responsivo */
+        content {
+            display: block;
+            padding: 20px 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .img {
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .p1, .p2, .p3, .p4 {
+            font-size: 1rem;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #444;
+        }
+
+        /* Media Queries para diferentes tamanhos de tela */
+        @media (max-width: 768px) {
+            .t_header {
+                font-size: 2rem;
+            }
+            
+            .t_footer {
+                font-size: 1.2rem;
+            }
+            
+            .sidenav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            .col {
+                flex: 100%;
+            }
+            
+            .p1, .p2, .p3, .p4 {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .t_header {
+                font-size: 1.5rem;
+            }
+            
+            .st_header {
+                font-size: 1rem;
+            }
+            
+            .t_footer {
+                font-size: 1rem;
+            }
+            
+            .sidenav a {
+                padding: 8px 10px;
+                font-size: 12px;
+                margin: 2px;
+            }
+        }
